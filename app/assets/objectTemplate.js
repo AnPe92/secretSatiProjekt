@@ -1,6 +1,6 @@
 export const machines = [
     {
-        miner:
+        value:
             [
                 { value: 60, label: "Mk1" },
                 { value: 120, label: "Mk2" },
@@ -10,11 +10,11 @@ export const machines = [
         label: "miner"
     },
     {
-        smelter: [],
+        value: [],
         label: "smelter"
     },
     {
-        constructor: [],
+        value: [],
         label: "constructor"
     }
 ]

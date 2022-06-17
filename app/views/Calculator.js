@@ -4,6 +4,7 @@ import Select from 'react-select'
 import { machines, options } from "../assets/objectTemplate";
 import { findAll, insert } from "../database/DbUtils";
 import Machines from "../models/Machines";
+import ChoiceButton from "../components/customButton";
 
 export default function Calculator() {
 
@@ -15,10 +16,13 @@ export default function Calculator() {
 
     return (
         <View>
+            <ChoiceButton buttonTitle="Machines" />
+            <ChoiceButton buttonTitle="Components" />
             <Select
                 options={machines}
                 onChange={handleMachineChoice}
             />
+
             <Text>Not jesus</Text>
         </View>
     )

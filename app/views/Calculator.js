@@ -1,29 +1,31 @@
 import { useState } from "react";
-import { View, Text, TextInput, } from "react-native"
+import { View, Text } from "react-native"
 import Select from 'react-select'
-import { machines, options } from "../assets/objectTemplate";
-import { findAll, insert } from "../database/DbUtils";
-import Machines from "../models/Machines";
-import ChoiceButton from "../components/customButton";
+import { data } from "../models/Resources"
+import ChoiceButton from "../components/CustomButton";
+import CustomSearchResult from "../components/CustomSearchResult";
+
 
 export default function Calculator() {
 
-    const { miner } = machines
-    const [machineChoosen, setMachineChoosen] = useState()
-    const handleMachineChoice = (value) => console.log(value.label);
+    const { recipes } = data
+    const [recipeChoosen, setRecipeChoosen] = useState('')
+    const handleRecipeChoice = (choice) => setRecipeChoosen(choice.value)
 
-    console.log(findAll)
+
+
 
     return (
         <View>
             <ChoiceButton buttonTitle="Machines" />
-            <ChoiceButton buttonTitle="Components" />
+            <ChoiceButton buttonTitle="Recipes" />
             <Select
-                options={machines}
-                onChange={handleMachineChoice}
+                options={recipes}
+                onChange={handleRecipeChoice}
             />
+            <CustomSearchResult recipe={[...recipeChoosen]} />
 
-            <Text>Not jesus</Text>
+
         </View>
     )
 }

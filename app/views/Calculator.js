@@ -9,8 +9,8 @@ import CustomSearchResult from "../components/CustomSearchResult";
 export default function Calculator() {
 
     const { recipes } = data
-    const [recipeChoosen, setRecipeChoosen] = useState('')
-    const handleRecipeChoice = (choice) => setRecipeChoosen(choice.value)
+    const [recipeChoosen, setRecipeChoosen] = useState([])
+    const handleRecipeChoice = (recipe) => { setRecipeChoosen(recipe); console.log(recipeChoosen + " <- recipe choosen") }
 
 
 
@@ -23,9 +23,9 @@ export default function Calculator() {
                 options={recipes}
                 onChange={handleRecipeChoice}
             />
-            <CustomSearchResult recipe={[...recipeChoosen]} />
-
-
+            <CustomSearchResult
+                recipeData={recipeChoosen}
+            />
         </View>
     )
 }

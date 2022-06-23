@@ -1,40 +1,36 @@
+import { useState } from "react";
+import DisplayComponent from "./DisplayComponent";
 import { Text, Pressable, View, FlatList } from "react-native";
-import { data } from "../models/Resources"
 
-export default function CustomSearchResult({ recipe }) {
 
-    const handleOnpressIngridients = (ingridient) => {
-        for (x in data) {
-            data.name === ingridient ? console.log("found it") : console.log("errrrrrrrrrrrror");
-        }
-    }
 
-    const renderMaterials = ({ item: recipe }) => {
+export default function CustomSearchResult({ recipeData }) {
+
+    console.log(recipeData + " Should look like this muyddafakkkakakak")
+
+    const renderItem = ({ item }) => {
         return (
-            <View>
-                <Pressable
-                    onPress={() => console.log(recipe)}
-                >
-                    <Text style={{ fontWeight: 'bold', fontSize: 12 }}>{recipe}</Text>
-                </Pressable>
-            </View>
+            <DisplayComponent
+                itemName={item[0]}
+                itemAmount={item[1]}
+            />
         )
     }
 
-    if (recipe.length > 1) {
+    if (recipeData.length < 1) {
+        return (
+            <Text>MAke a ChoiCe</Text>
+        )
+    } else {
 
         return (
             <View>
                 <FlatList
-                    data={recipe}
+                    data={recipeData.value}
+                    renderItem={renderItem}
                     keyExtractor={(item, index) => index.toString()}
-                    renderItem={renderMaterials} />
+                />
             </View>
-        )
-
-    } else {
-        return (
-            <Text>Please choose something dickhead</Text>
         )
     }
 }

@@ -1,661 +1,6 @@
 export const data =
 {
-    "belts": [
-        {
-            "name": "Conveyor Belt",
-            "key_name": "belt1",
-            "rate": 60
-        },
-        {
-            "name": "Conveyor Belt Mk.2",
-            "key_name": "belt2",
-            "rate": 120
-        },
-        {
-            "name": "Conveyor Belt Mk.3",
-            "key_name": "belt3",
-            "rate": 270
-        },
-        {
-            "name": "Conveyor Belt Mk.4",
-            "key_name": "belt4",
-            "rate": 480
-        },
-        {
-            "name": "Conveyor Belt Mk.5",
-            "key_name": "belt5",
-            "rate": 780
-        }
-    ],
-    "buildings": [
-        {
-            "name": "Constructor",
-            "key_name": "constructor",
-            "category": "crafting1",
-            "power": 4,
-            "max": 1
-        },
-        {
-            "name": "Assembler",
-            "key_name": "assembler",
-            "category": "crafting2",
-            "power": 15,
-            "max": 2
-        },
-        {
-            "name": "Manufacturer",
-            "key_name": "manufacturer",
-            "category": "crafting3",
-            "power": 55,
-            "max": 4
-        },
-        {
-            "name": "Smelter",
-            "key_name": "smelter",
-            "category": "smelting1",
-            "power": 4,
-            "max": 1
-        },
-        {
-            "name": "Foundry",
-            "key_name": "foundry",
-            "category": "smelting2",
-            "power": 16,
-            "max": 2
-        },
-        {
-            "name": "Refinery",
-            "key_name": "oil-refinery",
-            "category": "refining",
-            "power": 30,
-            "max": 2
-        }
-    ],
-    "miners": [
-        {
-            "name": "Miner MK1",
-            "key_name": "miner-mk1",
-            "category": "mineral",
-            "base_rate": 60,
-            "power": 5
-        },
-        {
-            "name": "Miner MK2",
-            "key_name": "miner-mk2",
-            "category": "mineral",
-            "base_rate": 120,
-            "power": 12
-        },
-        {
-            "name": "Miner MK3",
-            "key_name": "miner-mk3",
-            "category": "mineral",
-            "base_rate": 240,
-            "power": 30
-        },
-        {
-            "name": "Water Extractor",
-            "key_name": "water-extractor",
-            "category": "water",
-            "base_rate": 120,
-            "power": 20
-        },
-        {
-            "name": "Oil Pump",
-            "key_name": "oil-pump",
-            "category": "oil",
-            "base_rate": 120,
-            "power": 40
-        }
-    ],
-    "items": [
-        {
-            "name": "Smart Plating",
-            "key_name": "smart-plating",
-            "tier": 2,
-            "stack_size": 50
-        },
-        {
-            "name": "Versatile Framework",
-            "key_name": "versatile-framework",
-            "tier": 3,
-            "stack_size": 50
-        },
-        {
-            "name": "Automated Wiring",
-            "key_name": "automated-wiring",
-            "tier": 4,
-            "stack_size": 50
-        },
-        {
-            "name": "Modular Engine",
-            "key_name": "modular-engine",
-            "tier": 5,
-            "stack_size": 50
-        },
-        {
-            "name": "Adaptive Control Unit",
-            "key_name": "adaptive-control-unit",
-            "tier": 5,
-            "stack_size": 50
-        },
-        {
-            "name": "Copper Sheet",
-            "key_name": "copper-sheet",
-            "tier": 2,
-            "stack_size": 100
-        },
-        {
-            "name": "Iron Ore",
-            "key_name": "iron-ore",
-            "tier": -1,
-            "stack_size": 100
-        },
-        {
-            "name": "Copper Ore",
-            "key_name": "copper-ore",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Coal",
-            "key_name": "coal",
-            "tier": 3,
-            "stack_size": 100
-        },
-        {
-            "name": "Iron Ingot",
-            "key_name": "iron-ingot",
-            "tier": -1,
-            "stack_size": 100
-        },
-        {
-            "name": "Copper Ingot",
-            "key_name": "copper-ingot",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Steel Ingot",
-            "key_name": "steel-ingot",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Iron Plate",
-            "key_name": "iron-plate",
-            "tier": -1,
-            "stack_size": 100
-        },
-        {
-            "name": "Iron Rod",
-            "key_name": "iron-rod",
-            "tier": -1,
-            "stack_size": 100
-        },
-        {
-            "name": "Wire",
-            "key_name": "wire",
-            "tier": 0,
-            "stack_size": 500
-        },
-        {
-            "name": "Cable",
-            "key_name": "cable",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Biomass",
-            "key_name": "biomass",
-            "tier": 0,
-            "stack_size": 200
-        },
-        {
-            "name": "Concrete",
-            "key_name": "concrete",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Leaves",
-            "key_name": "leaves",
-            "tier": -1,
-            "stack_size": 500
-        },
-        {
-            "name": "Limestone",
-            "key_name": "limestone",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Screw",
-            "key_name": "screw",
-            "tier": 0,
-            "stack_size": 500
-        },
-        {
-            "name": "Wood",
-            "key_name": "wood",
-            "tier": -1,
-            "stack_size": 100
-        },
-        {
-            "name": "Alien Carapace",
-            "key_name": "alien-carapace",
-            "tier": -1,
-            "stack_size": 100
-        },
-        {
-            "name": "Mycelia",
-            "key_name": "mycelia",
-            "tier": -1,
-            "stack_size": 200
-        },
-        {
-            "name": "Solid Biofuel",
-            "key_name": "solid-biofuel",
-            "tier": 1,
-            "stack_size": 200
-        },
-        {
-            "name": "Color Cartridge",
-            "key_name": "color-cartridge",
-            "tier": 2,
-            "stack_size": 100
-        },
-        {
-            "name": "Power Shard",
-            "key_name": "power-shard",
-            "tier": 2,
-            "stack_size": 100
-        },
-        {
-            "name": "Steel Beam",
-            "key_name": "steel-beam",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Steel Pipe",
-            "key_name": "steel-pipe",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Reinforced Iron Plate",
-            "key_name": "reinforced-iron-plate",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Rotor",
-            "key_name": "rotor",
-            "tier": 2,
-            "stack_size": 100
-        },
-        {
-            "name": "Modular Frame",
-            "key_name": "modular-frame",
-            "tier": 2,
-            "stack_size": 50
-        },
-        {
-            "name": "Encased Industrial Beam",
-            "key_name": "encased-industrial-beam",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Stator",
-            "key_name": "stator",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Motor",
-            "key_name": "motor",
-            "tier": 4,
-            "stack_size": 50
-        },
-        {
-            "name": "Circuit Board",
-            "key_name": "circuit-board",
-            "tier": 5,
-            "stack_size": 200
-        },
-        {
-            "name": "Plastic",
-            "key_name": "plastic",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Crude Oil",
-            "key_name": "crude-oil",
-            "tier": 5,
-            "stack_size": 50
-        },
-        {
-            "name": "Heavy Oil Residue",
-            "key_name": "heavy-oil-residue",
-            "tier": 5,
-            "stack_size": 50
-        },
-        {
-            "name": "Polymer Resin",
-            "key_name": "polymer-resin",
-            "tier": 5,
-            "stack_size": 200
-        },
-        {
-            "name": "Fuel",
-            "key_name": "fuel",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Liquid Biofuel",
-            "key_name": "liquid-biofuel",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Rubber",
-            "key_name": "rubber",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Petroleum Coke",
-            "key_name": "petroleum-coke",
-            "tier": 5,
-            "stack_size": 200
-        },
-        {
-            "name": "Empty Canister",
-            "key_name": "empty-canister",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Packaged Water",
-            "key_name": "packaged-water",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Packaged Oil",
-            "key_name": "packaged-oil",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Packaged Fuel",
-            "key_name": "packaged-fuel",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Packaged Turbofuel",
-            "key_name": "packaged-turbofuel",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Packaged Heavy Oil Residue",
-            "key_name": "packaged-heavy-oil-residue",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Packaged Liquid Biofuel",
-            "key_name": "packaged-liquid-biofuel",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Water",
-            "key_name": "water",
-            "tier": 2,
-            "stack_size": 50
-        },
-        {
-            "name": "Heavy Modular Frame",
-            "key_name": "heavy-modular-frame",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Computer",
-            "key_name": "computer",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Caterium Ore",
-            "key_name": "caterium-ore",
-            "tier": 3,
-            "stack_size": 100
-        },
-        {
-            "name": "Caterium Ingot",
-            "key_name": "caterium-ingot",
-            "tier": 3,
-            "stack_size": 100
-        },
-        {
-            "name": "Quickwire",
-            "key_name": "quickwire",
-            "tier": 3,
-            "stack_size": 500
-        },
-        {
-            "name": "Supercomputer",
-            "key_name": "supercomputer",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "High-Speed Connector",
-            "key_name": "high-speed-connector",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "A.I. Limiter",
-            "key_name": "ai-limiter",
-            "tier": 5,
-            "stack_size": 100
-        },
-        {
-            "name": "Fabric",
-            "key_name": "fabric",
-            "tier": 1,
-            "stack_size": 100
-        },
-        {
-            "name": "Filter",
-            "key_name": "filter",
-            "tier": 6,
-            "stack_size": 100
-        },
-        {
-            "name": "Flower Petals",
-            "key_name": "flower-petals",
-            "tier": -1,
-            "stack_size": 200
-        },
-        {
-            "name": "Beacon",
-            "key_name": "beacon",
-            "tier": 0,
-            "stack_size": 100
-        },
-        {
-            "name": "Raw Quartz",
-            "key_name": "raw-quartz",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Quartz Crystal",
-            "key_name": "quartz-crystal",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Crystal Oscillator",
-            "key_name": "crystal-oscillator",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Sulfur",
-            "key_name": "sulfur",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Black Powder",
-            "key_name": "black-powder",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Nobelisk",
-            "key_name": "nobelisk",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Alien Organs",
-            "key_name": "alien-organs",
-            "tier": -1,
-            "stack_size": 200
-        },
-        {
-            "name": "Cartridge",
-            "key_name": "cartridge",
-            "tier": 5,
-            "stack_size": 50
-        },
-        {
-            "name": "Compacted Coal",
-            "key_name": "compacted-coal",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Turbofuel",
-            "key_name": "turbofuel",
-            "tier": 6,
-            "stack_size": 50
-        },
-        {
-            "name": "Silica",
-            "key_name": "silica",
-            "tier": 4,
-            "stack_size": 100
-        },
-        {
-            "name": "Bauxite",
-            "key_name": "bauxite",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Alumina Solution",
-            "key_name": "alumina-solution",
-            "tier": 7,
-            "stack_size": 50
-        },
-        {
-            "name": "Aluminum Scrap",
-            "key_name": "aluminum-scrap",
-            "tier": 7,
-            "stack_size": 500
-        },
-        {
-            "name": "Aluminum Ingot",
-            "key_name": "aluminum-ingot",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Alclad Aluminum Sheet",
-            "key_name": "alclad-aluminum-sheet",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Heat Sink",
-            "key_name": "heat-sink",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Radio Control Unit",
-            "key_name": "radio-control-unit",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Turbo Motor",
-            "key_name": "turbo-motor",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Battery",
-            "key_name": "battery",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Uranium",
-            "key_name": "uranium",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Sulfuric Acid",
-            "key_name": "sulfuric-acid",
-            "tier": 7,
-            "stack_size": 50
-        },
-        {
-            "name": "Uranium Pellet",
-            "key_name": "uranium-pellet",
-            "tier": 7,
-            "stack_size": 200
-        },
-        {
-            "name": "Uranium Cell",
-            "key_name": "uranium-cell",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Electromagnetic Control Rod",
-            "key_name": "em-control-rod",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Nuclear Fuel Rod",
-            "key_name": "nuclear-fuel-rod",
-            "tier": 7,
-            "stack_size": 100
-        },
-        {
-            "name": "Iodine Infused Filter",
-            "key_name": "iodine-infused-filter",
-            "tier": 7,
-            "stack_size": 100
-        }
-    ],
+
 
     //<--
     recipes: [
@@ -663,7 +8,7 @@ export const data =
 
 
             label: "Smart Plating",
-            "key_name": "smart-plating",
+            "key_l": "smart-plating",
             "category": "crafting2",
             "time": 30,
             value: [
@@ -684,7 +29,7 @@ export const data =
         },
         {
             label: "Alternate: Plastic Smart Plating",
-            "key_name": "alt-plastic-smart-plating",
+            "key_l": "alt-plastic-smart-plating",
             "category": "crafting3",
             "time": 24,
             value: [
@@ -707,11 +52,11 @@ export const data =
             ]
         },
         {
-            "name": "Versatile Framework",
-            "key_name": "versatile-framework",
+            label: "Versatile Framework",
+            "key_l": "versatile-framework",
             "category": "crafting2",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "modular-frame",
                     1
@@ -727,11 +72,11 @@ export const data =
             ]
         },
         {
-            "name": "Automated Wiring",
-            "key_name": "automated-wiring",
+            label: "Automated Wiring",
+            "key_l": "automated-wiring",
             "category": "crafting2",
             "time": 72,
-            "ingredients": [
+            value: [
                 [
                     "stator",
                     3
@@ -747,11 +92,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Automated Speed Wiring",
-            "key_name": "alt-automated-wiring",
+            label: "Alternate: Automated Speed Wiring",
+            "key_l": "alt-automated-wiring",
             "category": "crafting3",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "stator",
                     2
@@ -771,11 +116,11 @@ export const data =
             ]
         },
         {
-            "name": "Modular Engine",
-            "key_name": "modular-engine",
+            label: "Modular Engine",
+            "key_l": "modular-engine",
             "category": "crafting3",
             "time": 60,
-            "ingredients": [
+            value: [
                 [
                     "motor",
                     2
@@ -795,11 +140,11 @@ export const data =
             ]
         },
         {
-            "name": "Adaptive Control Unit",
-            "key_name": "adaptive-control-unit",
+            label: "Adaptive Control Unit",
+            "key_l": "adaptive-control-unit",
             "category": "crafting3",
             "time": 120,
-            "ingredients": [
+            value: [
                 [
                     "automated-wiring",
                     15
@@ -823,11 +168,11 @@ export const data =
             ]
         },
         {
-            "name": "Iron Ingot",
-            "key_name": "iron-ingot",
+            label: "Iron Ingot",
+            "key_l": "iron-ingot",
             "category": "smelting1",
             "time": 2,
-            "ingredients": [
+            value: [
                 [
                     "iron-ore",
                     1
@@ -839,11 +184,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Iron Alloy Ingot",
-            "key_name": "alt-iron-ingot",
+            label: "Alternate: Iron Alloy Ingot",
+            "key_l": "alt-iron-ingot",
             "category": "smelting2",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "iron-ore",
                     2
@@ -859,11 +204,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Pure Iron Ingot",
-            "key_name": "alt-pure-iron-ingot",
+            label: "Alternate: Pure Iron Ingot",
+            "key_l": "alt-pure-iron-ingot",
             "category": "refining",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "iron-ore",
                     7
@@ -879,11 +224,11 @@ export const data =
             ]
         },
         {
-            "name": "Copper Ingot",
-            "key_name": "copper-ingot",
+            label: "Copper Ingot",
+            "key_l": "copper-ingot",
             "category": "smelting1",
             "time": 2,
-            "ingredients": [
+            value: [
                 [
                     "copper-ore",
                     1
@@ -895,11 +240,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Copper Alloy Ingot",
-            "key_name": "alt-copper-alloy-ingot",
+            label: "Alternate: Copper Alloy Ingot",
+            "key_l": "alt-copper-alloy-ingot",
             "category": "smelting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "copper-ore",
                     10
@@ -915,11 +260,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Pure Copper Ingot",
-            "key_name": "alt-pure-copper-ingot",
+            label: "Alternate: Pure Copper Ingot",
+            "key_l": "alt-pure-copper-ingot",
             "category": "refining",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "copper-ore",
                     6
@@ -935,11 +280,11 @@ export const data =
             ]
         },
         {
-            "name": "Steel Ingot",
-            "key_name": "steel-ingot",
+            label: "Steel Ingot",
+            "key_l": "steel-ingot",
             "category": "smelting2",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "iron-ore",
                     3
@@ -955,11 +300,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Solid Steel Ingot",
-            "key_name": "alt-steel-ingot",
+            label: "Alternate: Solid Steel Ingot",
+            "key_l": "alt-steel-ingot",
             "category": "smelting2",
             "time": 3,
-            "ingredients": [
+            value: [
                 [
                     "iron-ingot",
                     2
@@ -975,11 +320,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Compacted Steel Ingot",
-            "key_name": "alt-enriched-steel-ingot",
+            label: "Alternate: Compacted Steel Ingot",
+            "key_l": "alt-enriched-steel-ingot",
             "category": "smelting2",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "iron-ore",
                     6
@@ -995,11 +340,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Coke Steel Ingot",
-            "key_name": "alt-coke-steel-ingot",
+            label: "Alternate: Coke Steel Ingot",
+            "key_l": "alt-coke-steel-ingot",
             "category": "smelting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "iron-ore",
                     15
@@ -1015,11 +360,11 @@ export const data =
             ]
         },
         {
-            "name": "Iron Plate",
-            "key_name": "iron-plate",
+            label: "Iron Plate",
+            "key_l": "iron-plate",
             "category": "crafting1",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "iron-ingot",
                     3
@@ -1031,11 +376,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Coated Iron Plate",
-            "key_name": "alt-coated-iron-plate",
+            label: "Alternate: Coated Iron Plate",
+            "key_l": "alt-coated-iron-plate",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "iron-ingot",
                     10
@@ -1051,11 +396,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Steel Coated Plate",
-            "key_name": "alt-steel-iron-plate",
+            label: "Alternate: Steel Coated Plate",
+            "key_l": "alt-steel-iron-plate",
             "category": "crafting2",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "steel-ingot",
                     3
@@ -1071,11 +416,11 @@ export const data =
             ]
         },
         {
-            "name": "Iron Rod",
-            "key_name": "iron-rod",
+            lable: "Iron Rod",
+            "key_l": "iron-rod",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "iron-ingot",
                     1
@@ -1087,11 +432,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Steel Rod",
-            "key_name": "alt-steel-rod",
+            label: "Alternate: Steel Rod",
+            "key_l": "alt-steel-rod",
             "category": "crafting1",
             "time": 5,
-            "ingredients": [
+            value: [
                 [
                     "steel-ingot",
                     1
@@ -1103,11 +448,11 @@ export const data =
             ]
         },
         {
-            "name": "Wire",
-            "key_name": "wire",
+            label: "Wire",
+            "key_l": "wire",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "copper-ingot",
                     1
@@ -1119,11 +464,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Iron Wire",
-            "key_name": "alt-iron-wire",
+            label: "Alternate: Iron Wire",
+            "key_l": "alt-iron-wire",
             "category": "crafting1",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "iron-ingot",
                     5
@@ -1135,11 +480,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Caterium Wire",
-            "key_name": "alt-caterium-wire",
+            label: "Alternate: Caterium Wire",
+            "key_l": "alt-caterium-wire",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "caterium-ingot",
                     1
@@ -1151,11 +496,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Fused Wire",
-            "key_name": "alt-fused-wire",
+            label: "Alternate: Fused Wire",
+            "key_l": "alt-fused-wire",
             "category": "crafting2",
             "time": 20,
-            "ingredients": [
+            value: [
                 [
                     "copper-ingot",
                     4
@@ -1171,11 +516,11 @@ export const data =
             ]
         },
         {
-            "name": "Cable",
-            "key_name": "cable",
+            label: "Cable",
+            "key_l": "cable",
             "category": "crafting1",
             "time": 2,
-            "ingredients": [
+            value: [
                 [
                     "wire",
                     2
@@ -1187,11 +532,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Insulated Cable",
-            "key_name": "alt-cable",
+            label: "Alternate: Insulated Cable",
+            "key_l": "alt-cable",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "wire",
                     9
@@ -1207,11 +552,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Coated Cable",
-            "key_name": "alt-coated-cable",
+            label: "Alternate: Coated Cable",
+            "key_l": "alt-coated-cable",
             "category": "refining",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "wire",
                     5
@@ -1227,11 +572,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Quickwire Cable",
-            "key_name": "alt-quickwire-cable",
+            label: "Alternate: Quickwire Cable",
+            "key_l": "alt-quickwire-cable",
             "category": "crafting2",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "quickwire",
                     3
@@ -1247,11 +592,11 @@ export const data =
             ]
         },
         {
-            "name": "Biomass",
-            "key_name": "biomass-from-leaves",
+            label: "Biomass",
+            "key_l": "biomass-from-leaves",
             "category": "crafting1",
             "time": 5,
-            "ingredients": [
+            value: [
                 [
                     "leaves",
                     10
@@ -1263,11 +608,11 @@ export const data =
             ]
         },
         {
-            "name": "Concrete",
-            "key_name": "concrete",
+            label: "Concrete",
+            "key_l": "concrete",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "limestone",
                     3
@@ -1279,11 +624,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Fine Concrete",
-            "key_name": "alt-concrete",
+            label: "Alternate: Fine Concrete",
+            "key_l": "alt-concrete",
             "category": "crafting2",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "silica",
                     3
@@ -1299,11 +644,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Rubber Concrete",
-            "key_name": "alt-rubber-concrete",
+            lable: "Alternate: Rubber Concrete",
+            "key_l": "alt-rubber-concrete",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "limestone",
                     10
@@ -1319,11 +664,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Wet Concrete",
-            "key_name": "alt-wet-concrete",
+            label: "Alternate: Wet Concrete",
+            "key_l": "alt-wet-concrete",
             "category": "refining",
             "time": 3,
-            "ingredients": [
+            value: [
                 [
                     "limestone",
                     6
@@ -1339,11 +684,11 @@ export const data =
             ]
         },
         {
-            "name": "Screw",
-            "key_name": "screw",
+            lable: "Screw",
+            "key_l": "screw",
             "category": "crafting1",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "iron-rod",
                     1
@@ -1355,11 +700,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Casted Screw",
-            "key_name": "alt-screw",
+            label: "Alternate: Casted Screw",
+            "key_l": "alt-screw",
             "category": "crafting1",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "iron-ingot",
                     5
@@ -1371,11 +716,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Steel Screw",
-            "key_name": "alt-steel-screw",
+            label: "Alternate: Steel Screw",
+            "key_l": "alt-steel-screw",
             "category": "crafting1",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "steel-beam",
                     1
@@ -1387,11 +732,11 @@ export const data =
             ]
         },
         {
-            "name": "Biomass",
-            "key_name": "biomass-from-wood",
+            label: "Biomass",
+            "key_l": "biomass-from-wood",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "wood",
                     4
@@ -1403,11 +748,11 @@ export const data =
             ]
         },
         {
-            "name": "Biomass",
-            "key_name": "biomass-from-alien-carapace",
+            label: "Biomass",
+            "key_l": "biomass-from-alien-carapace",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "alien-carapace",
                     1
@@ -1419,11 +764,11 @@ export const data =
             ]
         },
         {
-            "name": "Biomass",
-            "key_name": "biomass-from-mycelia",
+            label: "Biomass",
+            "key_l": "biomass-from-mycelia",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "mycelia",
                     10
@@ -1435,11 +780,11 @@ export const data =
             ]
         },
         {
-            "name": "Solid Biofuel",
-            "key_name": "solid-biofuel",
+            label: "Solid Biofuel",
+            "key_l": "solid-biofuel",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "biomass",
                     8
@@ -1451,11 +796,11 @@ export const data =
             ]
         },
         {
-            "name": "Color Cartridge",
-            "key_name": "color-cartridge",
+            label: "Color Cartridge",
+            "key_l": "color-cartridge",
             "category": "crafting1",
             "time": 40,
-            "ingredients": [
+            value: [
                 [
                     "flower-petals",
                     25
@@ -1467,11 +812,11 @@ export const data =
             ]
         },
         {
-            "name": "Steel Beam",
-            "key_name": "steel-beam",
+            label: "Steel Beam",
+            "key_l": "steel-beam",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "steel-ingot",
                     4
@@ -1483,11 +828,11 @@ export const data =
             ]
         },
         {
-            "name": "Steel Pipe",
-            "key_name": "steel-pipe",
+            label: "Steel Pipe",
+            "key_l": "steel-pipe",
             "category": "crafting1",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "steel-ingot",
                     3
@@ -1499,11 +844,11 @@ export const data =
             ]
         },
         {
-            "name": "Copper Sheet",
-            "key_name": "copper-sheet",
+            label: "Copper Sheet",
+            "key_l": "copper-sheet",
             "category": "crafting1",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "copper-ingot",
                     2
@@ -1515,11 +860,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Steamed Copper Sheet",
-            "key_name": "alt-steamed-copper-sheet",
+            label: "Alternate: Steamed Copper Sheet",
+            "key_l": "alt-steamed-copper-sheet",
             "category": "refining",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "copper-ingot",
                     3
@@ -1535,11 +880,11 @@ export const data =
             ]
         },
         {
-            "name": "Reinforced Iron Plate",
-            "key_name": "reinforced-iron-plate",
+            label: "Reinforced Iron Plate",
+            "key_l": "reinforced-iron-plate",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "iron-plate",
                     6
@@ -1555,11 +900,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Bolted Iron Plate",
-            "key_name": "alt-reinforced-iron-plate",
+            label: "Alternate: Bolted Iron Plate",
+            "key_l": "alt-reinforced-iron-plate",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "iron-plate",
                     18
@@ -1575,11 +920,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Stitched Iron Plate",
-            "key_name": "alt-stitched-iron-plate",
+            label: "Alternate: Stitched Iron Plate",
+            "key_l": "alt-stitched-iron-plate",
             "category": "crafting2",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "iron-plate",
                     10
@@ -1595,11 +940,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Adhered Iron Plate",
-            "key_name": "alt-adhered-iron-plate",
+            label: "Alternate: Adhered Iron Plate",
+            "key_l": "alt-adhered-iron-plate",
             "category": "crafting2",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "iron-plate",
                     3
@@ -1615,11 +960,11 @@ export const data =
             ]
         },
         {
-            "name": "Rotor",
-            "key_name": "rotor",
+            label: "Rotor",
+            "key_l": "rotor",
             "category": "crafting2",
             "time": 15,
-            "ingredients": [
+            value: [
                 [
                     "iron-rod",
                     5
@@ -1635,11 +980,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Steel Rotor",
-            "key_name": "alt-rotor",
+            label: "Alternate: Steel Rotor",
+            "key_l": "alt-rotor",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "steel-pipe",
                     2
@@ -1655,11 +1000,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Copper Rotor",
-            "key_name": "alt-copper-rotor",
+            label: "Alternate: Copper Rotor",
+            "key_l": "alt-copper-rotor",
             "category": "crafting2",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "copper-sheet",
                     6
@@ -1675,11 +1020,11 @@ export const data =
             ]
         },
         {
-            "name": "Modular Frame",
-            "key_name": "modular-frame",
+            label: "Modular Frame",
+            "key_l": "modular-frame",
             "category": "crafting2",
             "time": 60,
-            "ingredients": [
+            value: [
                 [
                     "reinforced-iron-plate",
                     3
@@ -1695,11 +1040,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Bolted Frame",
-            "key_name": "alt-bolted-frame",
+            label: "Alternate: Bolted Frame",
+            "key_l": "alt-bolted-frame",
             "category": "crafting2",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "reinforced-iron-plate",
                     3
@@ -1715,11 +1060,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Steeled Frame",
-            "key_name": "alt-modular-frame",
+            label: "Alternate: Steeled Frame",
+            "key_l": "alt-modular-frame",
             "category": "crafting2",
             "time": 60,
-            "ingredients": [
+            value: [
                 [
                     "reinforced-iron-plate",
                     2
@@ -1735,11 +1080,11 @@ export const data =
             ]
         },
         {
-            "name": "Encased Industrial Beam",
-            "key_name": "encased-industrial-beam",
+            label: "Encased Industrial Beam",
+            "key_l": "encased-industrial-beam",
             "category": "crafting2",
             "time": 10,
-            "ingredients": [
+            value: [
                 [
                     "steel-beam",
                     4
@@ -1755,11 +1100,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Encased Industrial Pipe",
-            "key_name": "alt-encased-industrial-beam",
+            label: "Alternate: Encased Industrial Pipe",
+            "key_l": "alt-encased-industrial-beam",
             "category": "crafting2",
             "time": 15,
-            "ingredients": [
+            value: [
                 [
                     "steel-pipe",
                     7
@@ -1775,11 +1120,11 @@ export const data =
             ]
         },
         {
-            "name": "Stator",
-            "key_name": "stator",
+            label: "Stator",
+            "key_l": "stator",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "steel-pipe",
                     3
@@ -1795,11 +1140,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Quickwire Stator",
-            "key_name": "alt-stator",
+            label: "Alternate: Quickwire Stator",
+            "key_l": "alt-stator",
             "category": "crafting2",
             "time": 15,
-            "ingredients": [
+            value: [
                 [
                     "steel-pipe",
                     4
@@ -1815,11 +1160,11 @@ export const data =
             ]
         },
         {
-            "name": "Motor",
-            "key_name": "motor",
+            label: "Motor",
+            "key_l": "motor",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "rotor",
                     2
@@ -1835,11 +1180,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Rigour Motor",
-            "key_name": "alt-motor",
+            label: "Alternate: Rigour Motor",
+            "key_l": "alt-motor",
             "category": "crafting3",
             "time": 48,
-            "ingredients": [
+            value: [
                 [
                     "rotor",
                     3
@@ -1859,11 +1204,11 @@ export const data =
             ]
         },
         {
-            "name": "Circuit Board",
-            "key_name": "circuit-board",
+            label: "Circuit Board",
+            "key_l": "circuit-board",
             "category": "crafting2",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "copper-sheet",
                     2
@@ -1879,11 +1224,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Silicone Circuit Board",
-            "key_name": "alt-circuit-board",
+            label: "Alternate: Silicone Circuit Board",
+            "key_l": "alt-circuit-board",
             "category": "crafting2",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "copper-sheet",
                     11
@@ -1899,11 +1244,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Caterium Circuit Board",
-            "key_name": "alt-quickwire-circuit-board",
+            label: "Alternate: Caterium Circuit Board",
+            "key_l": "alt-quickwire-circuit-board",
             "category": "crafting2",
             "time": 48,
-            "ingredients": [
+            value: [
                 [
                     "plastic",
                     10
@@ -1919,11 +1264,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Electrode Circuit Board",
-            "key_name": "alt-electrode-circuit-board",
+            label: "Alternate: Electrode Circuit Board",
+            "key_l": "alt-electrode-circuit-board",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "rubber",
                     6
@@ -1939,11 +1284,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Polymer Resin",
-            "key_name": "alt-polymer-resin",
+            label: "Alternate: Polymer Resin",
+            "key_l": "alt-polymer-resin",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "crude-oil",
                     6
@@ -1955,11 +1300,11 @@ export const data =
             ]
         },
         {
-            "name": "Plastic",
-            "key_name": "plastic",
+            label: "Plastic",
+            "key_l": "plastic",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "crude-oil",
                     3
@@ -1971,11 +1316,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Recycled Plastic",
-            "key_name": "alt-plastic",
+            label: "Alternate: Recycled Plastic",
+            "key_l": "alt-plastic",
             "category": "refining",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "rubber",
                     6
@@ -1991,11 +1336,11 @@ export const data =
             ]
         },
         {
-            "name": "Residual Plastic",
-            "key_name": "residual-plastic",
+            label: "Residual Plastic",
+            "key_l": "residual-plastic",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "polymer-resin",
                     6
@@ -2011,11 +1356,11 @@ export const data =
             ]
         },
         {
-            "name": "Liquid Biofuel",
-            "key_name": "liquid-biofuel",
+            label: "Liquid Biofuel",
+            "key_l": "liquid-biofuel",
             "category": "refining",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "solid-biofuel",
                     6
@@ -2031,11 +1376,11 @@ export const data =
             ]
         },
         {
-            "name": "Fuel",
-            "key_name": "fuel",
+            label: "Fuel",
+            "key_l": "fuel",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "crude-oil",
                     6
@@ -2047,11 +1392,11 @@ export const data =
             ]
         },
         {
-            "name": "Turbofuel",
-            "key_name": "turbofuel",
+            label: "Turbofuel",
+            "key_l": "turbofuel",
             "category": "refining",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "fuel",
                     6
@@ -2067,11 +1412,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Turbo Heavy Fuel",
-            "key_name": "alt-turbo-heavy-fuel",
+            label: "Alternate: Turbo Heavy Fuel",
+            "key_l": "alt-turbo-heavy-fuel",
             "category": "refining",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "heavy-oil-residue",
                     5
@@ -2087,11 +1432,11 @@ export const data =
             ]
         },
         {
-            "name": "Empty Canister",
-            "key_name": "empty-canister",
+            label: "Empty Canister",
+            "key_l": "empty-canister",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "plastic",
                     2
@@ -2103,11 +1448,11 @@ export const data =
             ]
         },
         {
-            "name": "Packaged Water",
-            "key_name": "packaged-water",
+            label: "Packaged Water",
+            "key_l": "packaged-water",
             "category": "refining",
             "time": 2,
-            "ingredients": [
+            value: [
                 [
                     "water",
                     2
@@ -2123,11 +1468,11 @@ export const data =
             ]
         },
         {
-            "name": "Packaged Oil",
-            "key_name": "packaged-oil",
+            label: "Packaged Oil",
+            "key_l": "packaged-oil",
             "category": "refining",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "crude-oil",
                     2
@@ -2143,11 +1488,11 @@ export const data =
             ]
         },
         {
-            "name": "Packaged Heavy Oil Residue",
-            "key_name": "packaged-heavy-oil-residue",
+            label: "Packaged Heavy Oil Residue",
+            "key_l": "packaged-heavy-oil-residue",
             "category": "refining",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "heavy-oil-residue",
                     2
@@ -2163,11 +1508,11 @@ export const data =
             ]
         },
         {
-            "name": "Packaged Fuel",
-            "key_name": "packaged-fuel",
+            label: "Packaged Fuel",
+            "key_l": "packaged-fuel",
             "category": "refining",
             "time": 3,
-            "ingredients": [
+            value: [
                 [
                     "fuel",
                     2
@@ -2183,11 +1528,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Diluted Packaged Fuel",
-            "key_name": "alt-diluted-packaged-fuel",
+            label: "Alternate: Diluted Packaged Fuel",
+            "key_l": "alt-diluted-packaged-fuel",
             "category": "refining",
             "time": 2,
-            "ingredients": [
+            value: [
                 [
                     "heavy-oil-residue",
                     1
@@ -2203,11 +1548,11 @@ export const data =
             ]
         },
         {
-            "name": "Residual Fuel",
-            "key_name": "fuel",
+            label: "Residual Fuel",
+            "key_l": "fuel",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "heavy-oil-residue",
                     6
@@ -2219,11 +1564,11 @@ export const data =
             ]
         },
         {
-            "name": "Packaged Turbofuel",
-            "key_name": "packaged-turbofuel",
+            label: "Packaged Turbofuel",
+            "key_l": "packaged-turbofuel",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "turbofuel",
                     2
@@ -2239,11 +1584,11 @@ export const data =
             ]
         },
         {
-            "name": "Packaged Liquid Biofuel",
-            "key_name": "packaged-liquid-biofuel",
+            label: "Packaged Liquid Biofuel",
+            "key_l": "packaged-liquid-biofuel",
             "category": "refining",
             "time": 3,
-            "ingredients": [
+            value: [
                 [
                     "liquid-biofuel",
                     2
@@ -2259,11 +1604,11 @@ export const data =
             ]
         },
         {
-            "name": "Rubber",
-            "key_name": "rubber",
+            label: "Rubber",
+            "key_l": "rubber",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "crude-oil",
                     3
@@ -2275,11 +1620,11 @@ export const data =
             ]
         },
         {
-            "name": "Residual Rubber",
-            "key_name": "residual-rubber",
+            label: "Residual Rubber",
+            "key_l": "residual-rubber",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "polymer-resin",
                     4
@@ -2295,11 +1640,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Recycled Rubber",
-            "key_name": "alt-recycled-rubber",
+            label: "Alternate: Recycled Rubber",
+            "key_l": "alt-recycled-rubber",
             "category": "refining",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "plastic",
                     6
@@ -2315,11 +1660,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Flexible Framework",
-            "key_name": "alt-flexible-framework",
+            label: "Alternate: Flexible Framework",
+            "key_l": "alt-flexible-framework",
             "category": "crafting3",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "modular-frame",
                     1
@@ -2339,11 +1684,11 @@ export const data =
             ]
         },
         {
-            "name": "Petroleum Coke",
-            "key_name": "petroleum-coke",
+            label: "Petroleum Coke",
+            "key_l": "petroleum-coke",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "heavy-oil-residue",
                     4
@@ -2355,11 +1700,11 @@ export const data =
             ]
         },
         {
-            "name": "Heavy Modular Frame",
-            "key_name": "heavy-modular-frame",
+            label: "Heavy Modular Frame",
+            "key_l": "heavy-modular-frame",
             "category": "crafting3",
             "time": 30,
-            "ingredients": [
+            value: [
                 [
                     "modular-frame",
                     5
@@ -2383,11 +1728,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Heavy Encased Frame",
-            "key_name": "alt-heavy-modular-frame",
+            label: "Alternate: Heavy Encased Frame",
+            "key_l": "alt-heavy-modular-frame",
             "category": "crafting3",
             "time": 64,
-            "ingredients": [
+            value: [
                 [
                     "modular-frame",
                     8
@@ -2411,11 +1756,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Heavy Flexible Frame",
-            "key_name": "alt-heavy-flexible-frame",
+            label: "Alternate: Heavy Flexible Frame",
+            "key_l": "alt-heavy-flexible-frame",
             "category": "crafting3",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "modular-frame",
                     5
@@ -2439,11 +1784,11 @@ export const data =
             ]
         },
         {
-            "name": "Computer",
-            "key_name": "computer",
+            label: "Computer",
+            "key_l": "computer",
             "category": "crafting3",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "circuit-board",
                     10
@@ -2467,11 +1812,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Caterium Computer",
-            "key_name": "alt-computer",
+            label: "Alternate: Caterium Computer",
+            "key_l": "alt-computer",
             "category": "crafting3",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "circuit-board",
                     7
@@ -2491,11 +1836,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Crystal Computer",
-            "key_name": "alt-crystal-computer",
+            label: "Alternate: Crystal Computer",
+            "key_l": "alt-crystal-computer",
             "category": "crafting2",
             "time": 64,
-            "ingredients": [
+            value: [
                 [
                     "circuit-board",
                     8
@@ -2511,11 +1856,11 @@ export const data =
             ]
         },
         {
-            "name": "Caterium Ingot",
-            "key_name": "caterium-ingot",
+            label: "Caterium Ingot",
+            "key_l": "caterium-ingot",
             "category": "smelting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "caterium-ore",
                     3
@@ -2527,11 +1872,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Pure Caterium Ingot",
-            "key_name": "alt-pure-caterium-ingot",
+            label: "Alternate: Pure Caterium Ingot",
+            "key_l": "alt-pure-caterium-ingot",
             "category": "refining",
             "time": 5,
-            "ingredients": [
+            value: [
                 [
                     "caterium-ore",
                     2
@@ -2547,11 +1892,11 @@ export const data =
             ]
         },
         {
-            "name": "Quickwire",
-            "key_name": "quickwire",
+            label: "Quickwire",
+            "key_l": "quickwire",
             "category": "crafting1",
             "time": 5,
-            "ingredients": [
+            value: [
                 [
                     "caterium-ingot",
                     1
@@ -2563,11 +1908,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Fused Quickwire",
-            "key_name": "alt-quickwire",
+            label: "Alternate: Fused Quickwire",
+            "key_l": "alt-quickwire",
             "category": "crafting2",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "caterium-ingot",
                     1
@@ -2583,11 +1928,11 @@ export const data =
             ]
         },
         {
-            "name": "Supercomputer",
-            "key_name": "supercomputer",
+            label: "Supercomputer",
+            "key_l": "supercomputer",
             "category": "crafting3",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "computer",
                     2
@@ -2611,11 +1956,11 @@ export const data =
             ]
         },
         {
-            "name": "High-Speed Connector",
-            "key_name": "high-speed-connector",
+            label: "High-Speed Connector",
+            "key_l": "high-speed-connector",
             "category": "crafting3",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "quickwire",
                     56
@@ -2635,11 +1980,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Silicone High-Speed Connector",
-            "key_name": "alt-high-speed-connector",
+            label: "Alternate: Silicone High-Speed Connector",
+            "key_l": "alt-high-speed-connector",
             "category": "crafting3",
             "time": 40,
-            "ingredients": [
+            value: [
                 [
                     "quickwire",
                     60
@@ -2659,11 +2004,11 @@ export const data =
             ]
         },
         {
-            "name": "A.I. Limiter",
-            "key_name": "ai-limiter",
+            label: "A.I. Limiter",
+            "key_l": "ai-limiter",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "copper-sheet",
                     5
@@ -2679,11 +2024,11 @@ export const data =
             ]
         },
         {
-            "name": "Fabric",
-            "key_name": "fabric",
+            label: "Fabric",
+            "key_l": "fabric",
             "category": "crafting2",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "mycelia",
                     1
@@ -2699,11 +2044,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Polyester Fabric",
-            "key_name": "alt-polyester-fabric",
+            label: "Alternate: Polyester Fabric",
+            "key_l": "alt-polyester-fabric",
             "category": "refining",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "polymer-resin",
                     16
@@ -2719,11 +2064,11 @@ export const data =
             ]
         },
         {
-            "name": "Filter",
-            "key_name": "filter",
+            label: "Filter",
+            "key_l": "filter",
             "category": "crafting3",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "coal",
                     5
@@ -2743,11 +2088,11 @@ export const data =
             ]
         },
         {
-            "name": "Beacon",
-            "key_name": "beacon",
+            label: "Beacon",
+            "key_l": "beacon",
             "category": "crafting3",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "iron-plate",
                     3
@@ -2771,11 +2116,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Crystal Beacon",
-            "key_name": "alt-beacon",
+            label: "Alternate: Crystal Beacon",
+            "key_l": "alt-beacon",
             "category": "crafting3",
             "time": 120,
-            "ingredients": [
+            value: [
                 [
                     "steel-beam",
                     4
@@ -2795,11 +2140,11 @@ export const data =
             ]
         },
         {
-            "name": "Quartz Crystal",
-            "key_name": "quartz-crystal",
+            label: "Quartz Crystal",
+            "key_l": "quartz-crystal",
             "category": "crafting1",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "raw-quartz",
                     5
@@ -2811,11 +2156,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Pure Quartz Crystal",
-            "key_name": "alt-pure-quartz-crystal",
+            label: "Alternate: Pure Quartz Crystal",
+            "key_l": "alt-pure-quartz-crystal",
             "category": "refining",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "raw-quartz",
                     9
@@ -2831,11 +2176,11 @@ export const data =
             ]
         },
         {
-            "name": "Crystal Oscillator",
-            "key_name": "crystal-oscillator",
+            label: "Crystal Oscillator",
+            "key_l": "crystal-oscillator",
             "category": "crafting3",
             "time": 120,
-            "ingredients": [
+            value: [
                 [
                     "quartz-crystal",
                     36
@@ -2855,11 +2200,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Insulated Crystal Oscillator",
-            "key_name": "alt-crystal-oscillator",
+            label: "Alternate: Insulated Crystal Oscillator",
+            "key_l": "alt-crystal-oscillator",
             "category": "crafting3",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "quartz-crystal",
                     10
@@ -2879,11 +2224,11 @@ export const data =
             ]
         },
         {
-            "name": "Black Powder",
-            "key_name": "black-powder",
+            label: "Black Powder",
+            "key_l": "black-powder",
             "category": "crafting2",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "coal",
                     1
@@ -2899,11 +2244,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Fine Black Powder",
-            "key_name": "alt-black-powder",
+            label: "Alternate: Fine Black Powder",
+            "key_l": "alt-black-powder",
             "category": "crafting2",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "sulfur",
                     2
@@ -2919,11 +2264,11 @@ export const data =
             ]
         },
         {
-            "name": "Nobelisk",
-            "key_name": "nobelisk",
+            label: "Nobelisk",
+            "key_l": "nobelisk",
             "category": "crafting2",
             "time": 20,
-            "ingredients": [
+            value: [
                 [
                     "black-powder",
                     5
@@ -2939,11 +2284,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Seismic Nobelisk",
-            "key_name": "alt-nobelisk",
+            label: "Alternate: Seismic Nobelisk",
+            "key_l": "alt-nobelisk",
             "category": "crafting3",
             "time": 40,
-            "ingredients": [
+            value: [
                 [
                     "black-powder",
                     8
@@ -2963,11 +2308,11 @@ export const data =
             ]
         },
         {
-            "name": "Biomass",
-            "key_name": "biomass-from-alien-organs",
+            label: "Biomass",
+            "key_l": "biomass-from-alien-organs",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "alien-organs",
                     1
@@ -2979,11 +2324,11 @@ export const data =
             ]
         },
         {
-            "name": "Cartridge",
-            "key_name": "cartridge",
+            label: "Cartridge",
+            "key_l": "cartridge",
             "category": "crafting3",
             "time": 20,
-            "ingredients": [
+            value: [
                 [
                     "beacon",
                     1
@@ -3007,11 +2352,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Compacted Coal",
-            "key_name": "alt-coal",
+            label: "Alternate: Compacted Coal",
+            "key_l": "alt-coal",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "coal",
                     5
@@ -3027,11 +2372,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Wood Coal",
-            "key_name": "alt-wood-coal",
+            label: "Alternate: Wood Coal",
+            "key_l": "alt-wood-coal",
             "category": "crafting1",
             "time": 4,
-            "ingredients": [
+            value: [
                 [
                     "wood",
                     1
@@ -3043,11 +2388,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Biomass Coal",
-            "key_name": "alt-biomass-coal",
+            label: "Alternate: Biomass Coal",
+            "key_l": "alt-biomass-coal",
             "category": "crafting1",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "biomass",
                     5
@@ -3059,11 +2404,11 @@ export const data =
             ]
         },
         {
-            "name": "Silica",
-            "key_name": "silica",
+            label: "Silica",
+            "key_l": "silica",
             "category": "crafting1",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "raw-quartz",
                     3
@@ -3075,11 +2420,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Cheap Silica",
-            "key_name": "alt-silica",
+            label: "Alternate: Cheap Silica",
+            "key_l": "alt-silica",
             "category": "crafting2",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "raw-quartz",
                     3
@@ -3095,11 +2440,11 @@ export const data =
             ]
         },
         {
-            "name": "Alumina Solution",
-            "key_name": "alumina-solution",
+            label: "Alumina Solution",
+            "key_l": "alumina-solution",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "bauxite",
                     7
@@ -3115,11 +2460,11 @@ export const data =
             ]
         },
         {
-            "name": "Aluminum Scrap",
-            "key_name": "aluminum-scrap",
+            label: "Aluminum Scrap",
+            "key_l": "aluminum-scrap",
             "category": "refining",
             "time": 1,
-            "ingredients": [
+            value: [
                 [
                     "alumina-solution",
                     4
@@ -3135,11 +2480,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Electrode-Aluminum Scrap",
-            "key_name": "alt-aluminum-scrap",
+            label: "Alternate: Electrode-Aluminum Scrap",
+            "key_l": "alt-aluminum-scrap",
             "category": "refining",
             "time": 2,
-            "ingredients": [
+            value: [
                 [
                     "alumina-solution",
                     3
@@ -3155,11 +2500,11 @@ export const data =
             ]
         },
         {
-            "name": "Aluminum Ingot",
-            "key_name": "aluminum-ingot",
+            label: "Aluminum Ingot",
+            "key_l": "aluminum-ingot",
             "category": "smelting2",
             "time": 3,
-            "ingredients": [
+            value: [
                 [
                     "aluminum-scrap",
                     12
@@ -3175,11 +2520,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Pure Aluminum Ingot",
-            "key_name": "alt-aluminum-ingot",
+            label: "Alternate: Pure Aluminum Ingot",
+            "key_l": "alt-aluminum-ingot",
             "category": "smelting1",
             "time": 5,
-            "ingredients": [
+            value: [
                 [
                     "aluminum-scrap",
                     12
@@ -3191,11 +2536,11 @@ export const data =
             ]
         },
         {
-            "name": "Alclad Aluminum Sheet",
-            "key_name": "alclad-aluminum-sheet",
+            label: "Alclad Aluminum Sheet",
+            "key_l": "alclad-aluminum-sheet",
             "category": "crafting2",
             "time": 8,
-            "ingredients": [
+            value: [
                 [
                     "aluminum-ingot",
                     8
@@ -3211,11 +2556,11 @@ export const data =
             ]
         },
         {
-            "name": "Heat Sink",
-            "key_name": "heat-sink",
+            label: "Heat Sink",
+            "key_l": "heat-sink",
             "category": "crafting2",
             "time": 12,
-            "ingredients": [
+            value: [
                 [
                     "alclad-aluminum-sheet",
                     8
@@ -3231,11 +2576,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Heat Exchanger",
-            "key_name": "alt-heat-sink",
+            label: "Alternate: Heat Exchanger",
+            "key_l": "alt-heat-sink",
             "category": "crafting2",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "alclad-aluminum-sheet",
                     20
@@ -3251,11 +2596,11 @@ export const data =
             ]
         },
         {
-            "name": "Radio Control Unit",
-            "key_name": "radio-control-unit",
+            label: "Radio Control Unit",
+            "key_l": "radio-control-unit",
             "category": "crafting3",
             "time": 24,
-            "ingredients": [
+            value: [
                 [
                     "heat-sink",
                     4
@@ -3279,11 +2624,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Radio Control Unit",
-            "key_name": "alt-radio-control-unit",
+            label: "Alternate: Radio Control Unit",
+            "key_l": "alt-radio-control-unit",
             "category": "crafting3",
             "time": 48,
-            "ingredients": [
+            value: [
                 [
                     "heat-sink",
                     10
@@ -3303,11 +2648,11 @@ export const data =
             ]
         },
         {
-            "name": "Turbo Motor",
-            "key_name": "turbo-motor",
+            label: "Turbo Motor",
+            "key_l": "turbo-motor",
             "category": "crafting3",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "heat-sink",
                     4
@@ -3331,11 +2676,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Turbo Rigour Motor",
-            "key_name": "alt-turbo-motor",
+            label: "Alternate: Turbo Rigour Motor",
+            "key_l": "alt-turbo-motor",
             "category": "crafting3",
             "time": 64,
-            "ingredients": [
+            value: [
                 [
                     "motor",
                     7
@@ -3359,11 +2704,11 @@ export const data =
             ]
         },
         {
-            "name": "Battery",
-            "key_name": "battery",
+            label: "Battery",
+            "key_l": "battery",
             "category": "crafting3",
             "time": 32,
-            "ingredients": [
+            value: [
                 [
                     "alclad-aluminum-sheet",
                     8
@@ -3387,11 +2732,11 @@ export const data =
             ]
         },
         {
-            "name": "Sulfuric Acid",
-            "key_name": "sulfuric-acid",
+            label: "Sulfuric Acid",
+            "key_l": "sulfuric-acid",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "sulfur",
                     5
@@ -3407,11 +2752,11 @@ export const data =
             ]
         },
         {
-            "name": "Uranium Pellet",
-            "key_name": "uranium-pellet",
+            label: "Uranium Pellet",
+            "key_l": "uranium-pellet",
             "category": "refining",
             "time": 6,
-            "ingredients": [
+            value: [
                 [
                     "uranium",
                     5
@@ -3427,11 +2772,11 @@ export const data =
             ]
         },
         {
-            "name": "Encased Uranium Cell",
-            "key_name": "uranium-cell",
+            label: "Encased Uranium Cell",
+            "key_l": "uranium-cell",
             "category": "crafting2",
             "time": 60,
-            "ingredients": [
+            value: [
                 [
                     "uranium-pellet",
                     40
@@ -3447,11 +2792,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Infused Uranium Cell",
-            "key_name": "alt-uranium-cell",
+            label: "Alternate: Infused Uranium Cell",
+            "key_l": "alt-uranium-cell",
             "category": "crafting3",
             "time": 120,
-            "ingredients": [
+            value: [
                 [
                     "uranium-pellet",
                     40
@@ -3475,11 +2820,11 @@ export const data =
             ]
         },
         {
-            "name": "Electromagnetic Control Rod",
-            "key_name": "em-control-rod",
+            label: "Electromagnetic Control Rod",
+            "key_l": "em-control-rod",
             "category": "crafting2",
             "time": 30,
-            "ingredients": [
+            value: [
                 [
                     "stator",
                     3
@@ -3495,11 +2840,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Electromagnetic Connection Rod",
-            "key_name": "alt-em-control-rod",
+            label: "Alternate: Electromagnetic Connection Rod",
+            "key_l": "alt-em-control-rod",
             "category": "crafting2",
             "time": 60,
-            "ingredients": [
+            value: [
                 [
                     "stator",
                     10
@@ -3515,11 +2860,11 @@ export const data =
             ]
         },
         {
-            "name": "Nuclear Fuel Rod",
-            "key_name": "nuclear-fuel-rod",
+            label: "Nuclear Fuel Rod",
+            "key_l": "nuclear-fuel-rod",
             "category": "crafting3",
             "time": 150,
-            "ingredients": [
+            value: [
                 [
                     "uranium-cell",
                     25
@@ -3539,11 +2884,11 @@ export const data =
             ]
         },
         {
-            "name": "Alternate: Nuclear Fuel Rod",
-            "key_name": "alt-nuclear-fuel-rod",
+            label: "Alternate: Nuclear Fuel Rod",
+            "key_l": "alt-nuclear-fuel-rod",
             "category": "crafting3",
             "time": 300,
-            "ingredients": [
+            value: [
                 [
                     "uranium-cell",
                     50
@@ -3567,11 +2912,11 @@ export const data =
             ]
         },
         {
-            "name": "Iodine Infused Filter",
-            "key_name": "iodine-infused-filter",
+            label: "Iodine Infused Filter",
+            "key_l": "iodine-infused-filter",
             "category": "crafting3",
             "time": 16,
-            "ingredients": [
+            value: [
                 [
                     "filter",
                     1
@@ -3593,47 +2938,47 @@ export const data =
     ],
     "resources": [
         {
-            "key_name": "iron-ore",
+            "key_l": "iron-ore",
             "category": "mineral"
         },
         {
-            "key_name": "copper-ore",
+            "key_l": "copper-ore",
             "category": "mineral"
         },
         {
-            "key_name": "coal",
+            "key_l": "coal",
             "category": "mineral"
         },
         {
-            "key_name": "limestone",
+            "key_l": "limestone",
             "category": "mineral"
         },
         {
-            "key_name": "caterium-ore",
+            "key_l": "caterium-ore",
             "category": "mineral"
         },
         {
-            "key_name": "sulfur",
+            "key_l": "sulfur",
             "category": "mineral"
         },
         {
-            "key_name": "raw-quartz",
+            "key_l": "raw-quartz",
             "category": "mineral"
         },
         {
-            "key_name": "crude-oil",
+            "key_l": "crude-oil",
             "category": "oil"
         },
         {
-            "key_name": "bauxite",
+            "key_l": "bauxite",
             "category": "mineral"
         },
         {
-            "key_name": "uranium",
+            "key_l": "uranium",
             "category": "mineral"
         },
         {
-            "key_name": "water",
+            "key_l": "water",
             "category": "water"
         }
     ]

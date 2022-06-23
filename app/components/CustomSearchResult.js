@@ -6,7 +6,7 @@ import { Text, Pressable, View, FlatList } from "react-native";
 
 export default function CustomSearchResult({ recipeData }) {
 
-    console.log(recipeData + " Should look like this muyddafakkkakakak")
+    console.log(recipeData.value + " Should look like this muyddafakkkakakak")
 
     const renderItem = ({ item }) => {
         return (

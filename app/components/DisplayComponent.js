@@ -21,10 +21,10 @@ export default function DisplayComponent({ itemName, itemAmount }) {
     const handleSetClickedComponent = () => { addComponent(); console.log(clickedComponent + " clickedcompepepepepepepepepeppepe") }
 
     const addComponent = () => {
-        console.log(recipes + "this is whjat im looking for right now biatch")
         recipes.filter((item) => {
-            console.log(item + " this is item console right now !!" + itemName + " <---------this is itemname rughtuerheurh reureruyea")
+
             if (item.key_l === itemName) {
+                console.log(item.value + " this is item console right now !!")
 
                 setClickedComponent(item.value)
 
@@ -33,6 +33,8 @@ export default function DisplayComponent({ itemName, itemAmount }) {
         })
 
     }
+
+    console.log(clickedComponent + " this is clicked component")
 
     // fixa hur data skickas med <--------------------------
 
@@ -43,7 +45,7 @@ export default function DisplayComponent({ itemName, itemAmount }) {
             <View>
                 <Text>{itemName}</Text>
                 <Text>{itemAmount}</Text>
-                {show && <DisplayComponent itemName={clickedComponent[0]} itemAmount={clickedComponent[1]} />}
+                {show && <DisplayComponent itemName={clickedComponent[0][0]} itemAmount={clickedComponent[0][1]} />}
 
             </View>
         </Pressable>

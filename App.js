@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import Index from './app/views/Index';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Calculator from './app//views/Calculator'
+
 
 
 const Stack = createNativeStackNavigator();
@@ -10,6 +11,7 @@ const Stack = createNativeStackNavigator();
 
 
 export default function App() {
+
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -21,9 +23,7 @@ export default function App() {
   );
 }
 
-//<View style={styles.container}>
-//<Index style={styles.indexStyle} />
-//</View >
+
 
 const styles = StyleSheet.create({
   container: {

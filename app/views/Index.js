@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Text, View, StyleSheet, ImageBackground, Dimensions, SafeAreaView, StatusBar, Button } from "react-native"
 import Header from "../components/Header"
 

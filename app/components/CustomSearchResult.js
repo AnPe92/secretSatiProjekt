@@ -17,20 +17,15 @@ export default function CustomSearchResult({ recipeData }) {
         )
     }
 
-    if (recipeData.length < 1) {
-        return (
-            <Text>MAke a ChoiCe</Text>
-        )
-    } else {
 
-        return (
-            <View>
-                <FlatList
-                    data={recipeData.value}
-                    renderItem={renderItem}
-                    keyExtractor={(item, index) => index.toString()}
-                />
-            </View>
-        )
-    }
+
+    return (
+        <View>
+            <FlatList
+                data={recipeData.value}
+                renderItem={renderItem}
+                keyExtractor={(item, index) => index.toString()}
+            />
+        </View>
+    )
 }

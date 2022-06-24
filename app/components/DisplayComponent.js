@@ -24,17 +24,15 @@ export default function DisplayComponent({ itemName, itemAmount }) {
         recipes.filter((item) => {
 
             if (item.key_l === itemName) {
-                console.log(item.value + " this is item console right now !!")
 
-                setClickedComponent(item.value)
-
-
+                setClickedComponent(item)
             }
         })
 
     }
 
-    console.log(clickedComponent + " this is clicked component")
+
+
 
     // fixa hur data skickas med <--------------------------
 
@@ -45,7 +43,9 @@ export default function DisplayComponent({ itemName, itemAmount }) {
             <View>
                 <Text>{itemName}</Text>
                 <Text>{itemAmount}</Text>
-                {show && <DisplayComponent itemName={clickedComponent[0][0]} itemAmount={clickedComponent[0][1]} />}
+                <CustomSearchResult
+                    recipeData={clickedComponent}
+                />
 
             </View>
         </Pressable>

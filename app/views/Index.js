@@ -3,7 +3,7 @@ import Header from "../components/Header"
 
 export default function Index({ navigation }) {
     return (
-        <SafeAreaView style={styles.indexView} >
+        <SafeAreaView style={styles.indexView} title="What" >
 
             <StatusBar animated={true} backgroundColor='#fff' barStyle="dark-content" />
             <ImageBackground
@@ -11,11 +11,9 @@ export default function Index({ navigation }) {
                 resizeMode='stretch'
                 style={styles.imagebackground}
             >
-                <View style={{ margin: 10 }} >
-                    <View style={{ margin: 10 }} >
-                        <View style={styles.headerView}>
-                            <Header style={styles.header} />
-                        </View>
+                <View style={{ marginBottom: 0 }} >
+                    <View style={{ margin: 0 }} >
+                            <Header style={styles.headerView} />
                     </View>
                 </View>
                 <View style={styles.textContainer} >
@@ -34,9 +32,9 @@ const styles = StyleSheet.create({
     indexView: {
         flex: 1,
         backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100%',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
+        height: 10,
         borderWidth: 1,
     },
     imagebackground: {
@@ -56,9 +54,11 @@ const styles = StyleSheet.create({
         color: 'white',
         borderWidth: 1,
         margin: 40,
-        height: "40vh"
+        height: "40vh",
+        borderColor: 'white',
     },
     textContainer: {
         borderWidth: 5,
+        height: '50%',
     }
 })

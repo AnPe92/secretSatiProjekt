@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 export default function Header() {
     return (
-        <View>
+        <View  >
             <Text style={styles.titleText} >Jeeeesssuuuussssssss</Text>
             {/* hamburgermeny */}
 
@@ -12,7 +12,13 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     headerStyle: {
-        //height: "auto"
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'flex-end',
+        borderColor: 'white',
+        borderWidth: 2,
+        
+        height: 25,
     },
     titleText: {
         color: 'white'
